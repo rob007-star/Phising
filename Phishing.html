@@ -6,6 +6,7 @@
   <title>Phishing Informatie</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <style>
     body {
@@ -24,6 +25,15 @@
       box-shadow: 0 8px 25px rgba(0,0,0,0.08);
       border: none;
     }
+
+    h2 {
+      color: #dc3545;
+      font-weight: bold;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
   </style>
 </head>
 
@@ -31,21 +41,22 @@
 
 <header class="hero">
   <h1>🔐 Phishing Informatie</h1>
-  <p>Overzicht van phishing en bescherming</p>
+  <p>Overzicht van phishing, technieken en bescherming</p>
 </header>
 
 <div class="container py-5">
 
   <div class="card p-4 mb-4">
-    <h2>Spam in e-mailverkeer</h2>
+    <h2><i class="bi bi-envelope-fill text-danger me-2"></i>Spam in e-mailverkeer</h2>
     <ul>
-      <li>45% van alle e-mails wereldwijd is spam</li>
-      <li>Spam kan phishing, malware of scams bevatten</li>
+      <li>Ongeveer 45% van alle e-mails wereldwijd is spam.</li>
+      <li>Spam kan phishing, malware of scams bevatten.</li>
     </ul>
   </div>
 
   <div class="card p-4 mb-4">
-    <h2>Wat is social engineering?</h2>
+    <h2><i class="bi bi-person-fill-lock text-danger me-2"></i>Wat is social engineering?</h2>
+    <p>Manipuleren van mensen om informatie te verkrijgen.</p>
     <ul>
       <li>Autoriteit</li>
       <li>Urgentie</li>
@@ -55,45 +66,190 @@
   </div>
 
   <div class="card p-4 mb-4">
-    <h2>Wat is phishing?</h2>
+    <h2><i class="bi bi-shield-exclamation text-danger me-2"></i>Wat is phishing?</h2>
     <p>
-      Een vorm van social engineering waarbij een aanvaller zich voordoet als betrouwbare bron.
+      Een vorm van social engineering waarbij een aanvaller zich voordoet als betrouwbare organisatie
+      of persoon om gevoelige informatie te verkrijgen.
     </p>
   </div>
 
   <div class="card p-4 mb-4">
-    <h2>Phishing varianten</h2>
+    <h2><i class="bi bi-phone-fill text-danger me-2"></i>Phishing varianten</h2>
     <ul class="list-unstyled">
-      <li class="mb-3">
-        📱 <strong>Smishing:</strong> phishing via sms-berichten waarbij slachtoffers op een link klikken of persoonlijke gegevens delen.
-      </li>
-
-      <li class="mb-3">
-        📞 <strong>Vishing:</strong> phishing via telefoongesprekken waarbij een aanvaller zich voordoet als bijvoorbeeld een bank of overheidsdienst.
-      </li>
-
-      <li class="mb-3">
-        🔳 <strong>Quishing:</strong> phishing via QR-codes die gebruikers naar valse websites leiden.
-      </li>
-
-      <li class="mb-3">
-        🎯 <strong>Spear phishing:</strong> een gerichte phishingaanval waarbij persoonlijke informatie wordt gebruikt om geloofwaardiger over te komen.
-      </li>
+      <li>📱 <strong>Smishing:</strong> phishing via sms-berichten waarbij slachtoffers op links klikken.</li>
+      <li>📞 <strong>Vishing:</strong> phishing via telefoongesprekken waarbij men zich voordoet als bank of dienst.</li>
+      <li>🔳 <strong>Quishing:</strong> phishing via QR-codes die leiden naar valse websites.</li>
+      <li>🎯 <strong>Spear phishing:</strong> gerichte aanval met persoonlijke informatie.</li>
     </ul>
   </div>
 
   <div class="card p-4 mb-4">
-    <h2>Bescherming</h2>
-    <ul>
-      <li>Controleer afzenders</li>
-      <li>Klik niet op verdachte links</li>
-      <li>Gebruik MFA</li>
-      <li>Gebruik sterke wachtwoorden</li>
-    </ul>
-  </div>
+  <h2><i class="bi bi-shield-lock-fill text-danger me-2"></i>Bescherming tegen phishing</h2>
+  <ul>
+
+    <li>
+      <strong>Controleer altijd de afzender:</strong><br>
+      Kijk goed naar het volledige e-mailadres of telefoonnummer.  
+      Aanvallers gebruiken vaak adressen die sterk lijken op echte bedrijven,
+      bijvoorbeeld support@micr0soft.com in plaats van microsoft.com.
+    </li>
+
+    <li>
+      <strong>Klik niet zomaar op links:</strong><br>
+      Ontvang je een mail van een firma waarmee je niets te maken hebt,
+      wees dan extra voorzichtig. Beweeg met je muis over de link om te zien
+      waar deze werkelijk naartoe gaat.
+    </li>
+
+    <li>
+      <strong>Open geen onbekende bijlagen:</strong><br>
+      Bijlagen kunnen malware bevatten zoals virussen of ransomware.
+      Open enkel bestanden wanneer je zeker bent van de afzender.
+    </li>
+
+    <li>
+      <strong>Gebruik MFA (Multi-Factor Authentication):</strong><br>
+      Zelfs als je wachtwoord gestolen wordt, is extra verificatie nodig
+      via bijvoorbeeld een app, sms-code of authenticatie-app.
+    </li>
+
+    <li>
+      <strong>Gebruik sterke wachtwoorden:</strong><br>
+      Een sterk wachtwoord bevat:
+      <ul>
+        <li>Minstens 12 tekens</li>
+        <li>Hoofdletters en kleine letters</li>
+        <li>Cijfers</li>
+        <li>Speciale tekens zoals ! @ # %</li>
+      </ul>
+      Gebruik geen namen, geboortedata of eenvoudige woorden.  
+      Werk liefst met een wachtzin, bijvoorbeeld:
+      <em>MijnHondEet3Appels!</em>
+    </li>
+
+    <li>
+      <strong>Bankfraude herkennen:</strong><br>
+      Je bank, Card Stop of andere officiële diensten zullen nooit zelf bellen
+      om codes, wachtwoorden of bankgegevens te vragen.
+      Vertrouw je het niet? Stop het gesprek en bel zelf naar je bank via het officiële nummer
+      of open de officiële bankapp.
+    </li>
+
+    <li>
+      <strong>Geef nooit codes of wachtwoorden door:</strong><br>
+      Deel nooit pincodes, MFA-codes, kaartlezercodes of wachtwoorden via telefoon,
+      sms, mail of chat — ook niet als iemand zich voordoet als bankmedewerker.
+    </li>
+
+    <li>
+      <strong>Verifieer onverwachte verzoeken:</strong><br>
+      Wordt er dringend geld of informatie gevraagd?
+      Neem altijd zelf contact op via officiële kanalen.
+    </li>
+
+    <li>
+      <strong>Meld verdachte berichten:</strong><br>
+      Rapporteer verdachte mails, sms’en of oproepen aan je IT-dienst,
+      provider of bank.
+    </li>
+
+  </ul>
+</div>
+
+  <div class="card p-4 mb-4">
+  <h2><i class="bi bi-server text-danger me-2"></i>Mailbeveiliging voor beheerders</h2>
+
+  <p>
+    Organisaties gebruiken verschillende beveiligingstechnieken om phishingmails te herkennen
+    en te blokkeren nog vóór ze bij de gebruiker terechtkomen.
+    Deze technieken helpen e-mailservers controleren of een bericht echt afkomstig is
+    van de afzender die vermeld wordt.
+  </p>
+
+  <ul>
+
+    <li>
+      <strong>SPF (Sender Policy Framework):</strong><br>
+      SPF bepaalt welke mailservers toestemming hebben om e-mails te versturen
+      namens een bepaald domein.  
+      Bijvoorbeeld: als een mail zogezegd van <em>jouwbank.be</em> komt,
+      controleert SPF of die mail echt verzonden werd via een server
+      die door die bank is toegestaan.
+    </li>
+
+    <li>
+      <strong>DKIM (DomainKeys Identified Mail):</strong><br>
+      DKIM voegt een digitale handtekening toe aan elke e-mail.
+      Daardoor kan de ontvangende server controleren of de inhoud van het bericht
+      onderweg niet gewijzigd werd.
+      Dit helpt beschermen tegen vervalste of aangepaste e-mails.
+    </li>
+
+    <li>
+      <strong>DMARC (Domain-based Message Authentication, Reporting and Conformance):</strong><br>
+      DMARC bepaalt wat er moet gebeuren wanneer een e-mail niet slaagt voor SPF of DKIM.
+      Een organisatie kan instellen dat verdachte mails:
+      <ul>
+        <li>worden doorgelaten</li>
+        <li>gemarkeerd worden als verdacht</li>
+        <li>volledig geweigerd worden</li>
+      </ul>
+      Hierdoor kunnen phishingpogingen sneller geblokkeerd worden.
+    </li>
+
+  </ul>
+
+  <p>
+    Hoewel deze technieken veel phishing tegenhouden, kunnen aanvallers soms toch nog
+    overtuigende berichten versturen. Daarom blijft waakzaamheid belangrijk.
+  </p>
+</div>
+
+
+<div class="card p-4 mb-4">
+  <h2><i class="bi bi-search text-danger me-2"></i>OSINT en cybercrime</h2>
+
+  <p>
+    OSINT staat voor <strong>Open Source Intelligence</strong>:
+    het verzamelen van informatie via publiek beschikbare bronnen.
+    Cybercriminelen gebruiken deze techniek om slachtoffers beter te leren kennen
+    en geloofwaardige aanvallen op te bouwen.
+  </p>
+
+  <ul>
+
+    <li>
+      <strong>Persoonlijke informatie verzamelen:</strong><br>
+      Aanvallers zoeken gegevens op via sociale media, LinkedIn, bedrijfswebsites,
+      nieuwsartikels of openbare databanken.
+    </li>
+
+    <li>
+      <strong>Spear phishing voorbereiden:</strong><br>
+      Met gevonden informatie kunnen ze zeer gerichte mails maken,
+      bijvoorbeeld met jouw naam, werkgever of recente activiteiten.
+      Hierdoor lijkt het bericht veel betrouwbaarder.
+    </li>
+
+    <li>
+      <strong>Vertrouwen misbruiken:</strong><br>
+      Door bekende namen, logo’s of interne informatie te gebruiken,
+      proberen aanvallers vertrouwen op te bouwen zodat slachtoffers sneller reageren.
+    </li>
+
+  </ul>
+
+  <p>
+    Hoe meer persoonlijke informatie publiek beschikbaar is,
+    hoe makkelijker het wordt om gerichte phishing uit te voeren.
+    Daarom is bewust omgaan met online informatie belangrijk.
+  </p>
+</div>
 
   <div class="text-center mt-4">
-    <a href="index.html" class="btn btn-danger btn-lg">Terug naar waarschuwing</a>
+    <a href="index.html" class="btn btn-danger btn-lg">
+      Terug naar waarschuwing
+    </a>
   </div>
 
 </div>
